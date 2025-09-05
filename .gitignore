@@ -1,1 +1,4 @@
 data/*
+malimg_paper_dataset_imgs/*
+malimg_resized/*
+.DS_Store
