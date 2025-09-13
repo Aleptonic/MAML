@@ -1,14 +1,46 @@
-# Implementation of MI-MAML for Few-Shot Malware Classification
 
+
+
+# MI-MAML: Multi-Improved Model-Agnostic Meta-Learning for Few-Shot Malware Classification
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains a from-scratch PyTorch implementation of the research paper:
+> A research implementation of [**MI-MAML**](https://cybersecurity.springeropen.com/articles/10.1186/s42400-024-00314-9), a meta-learning framework that enhances few-shot malware classification by combining optimized data augmentation, customized neural networks, and adaptive learning-rate schemes.
 
-## **_Mi-maml: classifying few-shot advanced malware using multi-improved model-agnostic meta-learning_**
 
-The project successfully replicates the paper's methodology for classifying malware families from their visual representations using only a few samples.
+---
+
+## 📌 Overview
+Traditional machine learning models for malware detection require large labeled datasets and often overfit, struggling to identify new or rare threats.
+
+**MI-MAML** tackles this by extending the classic [MAML](https://arxiv.org/abs/1703.03400) algorithm:
+- Introduces **grayscale** and **Lab color space** augmentations for malware binaries.
+- Uses **task-tailored neural network backbones**.
+- Employs **adaptive learning rates** during inner-loop updates.
+
+This synergy boosts classification accuracy, precision, and F1-score across multiple few-shot malware datasets.
+
+---
+
+## 🚀 Features
+- Supports **N-way K-shot** experiments on malware datasets.
+- Modular design for augmentation, backbone, and optimizer.
+- Includes **ablation scripts** to analyze each component.
+
+---
+
+## 💡 Use Cases
+- Early detection of new malware families.
+- Enhancing SOC (Security Operations Center) triage.
+- Powering threat intelligence feeds.
+- Strengthening EDR / antivirus engines.
+- Protecting cloud, IoT, and OT environments from zero-day threats.
+
+---
+
+
+
 
 ## Overview
 
