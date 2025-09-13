@@ -42,11 +42,11 @@ This synergy boosts classification accuracy, precision, and F1-score across mult
 
 
 
-## Overview
+## 🛠️ Technical Overview
 
 The core challenge addressed by this work is **few-shot malware classification**. Traditional deep learning models require vast amounts of labeled data, which is often unavailable for new and advanced malware families.This project implements the **Model-Agnostic Meta-Learning (MAML)** framework, which trains a model to be highly adaptable, enabling it to learn to classify new, unseen malware families from just a handful of examples (K-shots).
 
-## Key Features & Contributions of This Implementation
+## 🎯 Contributions of This Implementation
 
 
 This project is not just a direct replication but also includes a novel approach to data augmentation, making it a valuable resource for both researchers and practitioners.
@@ -75,7 +75,7 @@ This project is not just a direct replication but also includes a novel approach
 
 * **Integrated Experiment Tracking**: The training pipeline is fully integrated with **MLflow**, allowing for systematic tracking of hyperparameters, metrics, and model artifacts for reproducible research.
 
-## Methodology
+## 🧭 Methodology
 
 The pipeline follows the overall architecture proposed in the paper. An input malware image is processed through a custom CNN, which is trained via the MAML algorithm to learn a generalizable initialization.
 
@@ -111,7 +111,7 @@ The project uses the `MCCNN` architecture specified in the paper, consisting of 
 </p>
 
 
-## Setup and Installation
+## ⚙️ Setup and Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -136,7 +136,7 @@ The project uses the `MCCNN` architecture specified in the paper, consisting of 
     matplotlib
     ```
 
-## How to Run
+## 🚀 How to Run
 
 1.  **Data Preparation**:
     Place your resized (e.g., 64x64) malware images in a directory structure organized by family:
@@ -164,7 +164,7 @@ The project uses the `MCCNN` architecture specified in the paper, consisting of 
     ```
     Then, navigate to `http://127.0.0.1:5000` in your web browser.
 
-## Sample Results
+## 📊 Sample Results
 
 
 
@@ -174,7 +174,7 @@ The project uses the `MCCNN` architecture specified in the paper, consisting of 
 | 2-way, 5-shot   | 97.30%       | TBD            |
 | 5-way, 5-shot   | TBD          | TBD            |
 
-## Citation
+## 📝 Citation
 
 If you use this work, please consider citing the original paper:
 
